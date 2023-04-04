@@ -1,0 +1,437 @@
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 1.5rem;
+    background-color: white;
+}
+
+.header {
+    display: flex;
+    align-items:flex-end;
+    justify-content:space-around;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: uppercase;
+    background-color: black;   
+}
+
+.header__logo {
+    text-align:center;
+    line-height: 1%   
+}
+
+.header__logo_title {
+    font-size: 60px;
+    color: white;   
+}
+
+.header__logo_subtitle {
+    font-size: 30px;
+    color: white;   
+}
+
+.header__nav {
+    padding-bottom: 20px;
+    font-size: 30px; 
+}
+
+.header__nav a { 
+    text-decoration: none;
+}
+
+.header__nav a:link{
+    color: white
+}
+
+.header__nav a:hover{
+    text-decoration: underline;
+    text-align: center;
+    padding: 4px 4px;
+}
+
+.header__nav a:visited {
+    color:rgb(241,217,122);
+}
+
+.bannerphoto {
+    background: url(/image/titanic.jpg) no-repeat center;
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-color: black;
+    position:relative;
+    padding-top: 20px;
+    border-top: rgb(219,129,56) 8px solid;
+    background-position: 0px -100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.bannerphoto__txt {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    line-height: 0px;
+    color:rgb(241,217,122);
+}
+
+.bannerphoto__tx_maintxt {
+    font-size: 80px;  
+}
+
+.bannerphoto__txt_subtxt {
+    font-size: 40px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 8px;
+}
+
+.content-buttons {
+    display: flex;
+    justify-content:flex-end;
+    margin-top: -50px; 
+}
+
+.content-buttons__link {
+    padding: 10px 30px;
+    margin: 0px 0px 0px 20px;
+    border-radius: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: rgb(221,160,53);
+}
+
+.about {
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:lighter;
+    margin-top: -20px;
+}
+
+.about__image {
+    float: right;
+    padding: 50px 10px 0px 5px;
+    width: 200px;
+    height: 290px;
+}
+
+.about__text {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    color:white;
+    background-color: rgb(39,95,142);
+    padding: 20px ;
+    display: flex;
+    justify-content:center;
+    border-top: rgb(219,129,56) 8px solid;
+}
+
+
+/* responsive screen for iPads */
+
+@media screen and  (min-width: 768px) and (max-width:1370px){
+
+.header {
+    min-height: 150px;   
+}
+
+.header__logo {
+    color: white;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+
+.header__logo_title {
+    font-size: 46px;
+}
+
+.header__logo_subtitle {
+    font-size: 28px;   
+}
+
+.header__nav {
+    overflow: hidden;
+    display:contents;
+    text-align:center;
+    font-size: 28px;   
+}
+
+.header__nav a {
+    text-decoration: none;
+}
+
+.header__nav a:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+
+.header__nav a:active {
+    background-color: darkgoldenrod;
+    color:white
+}
+
+.bannerphoto {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-color: black;
+    position:relative;
+    background-position: 0px -30px;
+}
+
+.bannerphoto__txt {
+    color:rgb(253, 253, 170);
+    line-height: 10px;
+    text-align: center;
+}
+
+.bannerphoto__txt_maintxt {
+    font-size: 40px; 
+}
+
+.bannerphoto__txt_subtxt {
+    font-size: 30px;
+}
+
+.content-buttons {
+    display:flex;
+    grid-gap: 15px;
+    float: right;
+    margin-top: -40px;
+}
+
+.about {
+    font-size: 40px;
+    margin-top: -20px;
+    padding-left: 10px;
+}
+
+.about__text {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.about__image {
+    padding: 0 5px 0px 5px;
+    width: 150px;
+    height: 220px;
+    margin-top: 10px;
+    float: right;
+}
+}
+
+
+/* responsive screen for phones */
+
+@media screen and  (max-width: 767px) {
+
+.header {
+    min-height: 150px;   
+}
+    
+.header__logo {
+    color: white;
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+    
+.header__logo_title {
+    font-size: 34px;
+}
+    
+.header__logo_subtitle {
+    font-size: 20px;
+}
+    
+.header__nav {
+    overflow: hidden;
+    font-size: 13px;
+    display: contents;
+    text-align: center;
+}
+    
+.header__nav a:hover {
+    background-color: antiquewhite;
+    color: black;
+}
+    
+.header__nav a:active {
+    background-color: darkgoldenrod;
+    color:white
+}
+    
+.bannerphoto {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-color: black;
+    position:relative;
+    background-position: 0px -30px;
+}
+    
+.bannerphoto__txt {
+    color:rgb(253, 253, 170);
+    position:absolute;
+    top: 170px;
+}
+    
+.bannerphoto__txt_maintxt {
+    font-size: 35px; 
+}
+    
+.bannerphoto__txt_subtxt {
+    font-size: 20px;
+}
+    
+.content-buttons {
+    display:grid;
+    grid-gap: 10px;
+    margin-top: -50px;
+}
+
+.about{
+    font-size: 40px;
+    margin-top: -60px;
+    margin-bottom: 60px;
+    padding-left: 10px;
+}
+
+.about__image {
+    display:grid;
+    padding: 0 5px 0px 5px;
+    width: 200px;
+    height: 290px;
+}   
+}
+/*=================================
+Cast Page Styling
+===================================*/
+.castbanner {
+    background: url(/image/castbanner.png) no-repeat center;
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-color: black;
+    position:relative;
+    padding-top: 20px;
+    border-top: rgb(219,129,56) 8px solid;
+    background-position: 0px -100px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.castbanner__txt {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    line-height: 0px;
+    color:rgb(241,217,122);
+}
+
+.castbanner__tx_maintxt {
+    font-size: 80px;
+}
+
+.castbanner__txt_subtxt {
+    font-size: 40px;
+}
+.cast-about {
+    font-size: 40px;
+    margin-top: -20px;
+    padding-left: 10px;
+    color:rgb(11, 59, 101)
+}
+.cast-title {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.cast-text {
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    margin-top: 30px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+}
+.cast-people {
+        background-color:rgb(241,217,122);
+        max-width: 300px;
+        text-align: center;
+        border: solid 5px;
+        border-color: rgb(81, 101, 119);
+        padding-bottom: 2px;
+        padding-top: 2px;
+        display: grid;
+        grid-area: cast-people;
+
+}
+    .main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .nav {
+        margin: 0;
+        padding: 0;
+    }
+    .cast-member {
+        margin-bottom: 40px;
+    }
+    .awards__button {
+        display: flex;
+        justify-content: end;
+        max-width: 2700px;
+        background-color: blanchedalmond;
+        font-size: 18px;
+        font-family: serif;
+        margin: auto;
+        margin-top: 25px;
+        border: solid black 1px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        padding: 5px;
+    }
+    .awards__button:hover {
+        color: rgb(246, 240, 238);
+        background-color: rgb(23, 62, 141);
+        cursor: pointer;
+        animation: hover 0.5s infinite alternate-reverse;
+        transition: 0.5s;
+    }
+    @keyframes hover {
+        to {
+           transform: translateX(3px);
+        }
+     }
+    
+    /* Elements */
+    .header__title {
+        margin: 0;
+    }
+    
+    .nav__list {
+        list-style: none;
+    }
+    
+    .nav__item {
+        display: inline-block;
+        margin-right: 20px;
+    }
